@@ -1,0 +1,33 @@
+@use "./vars/variables" as *;
+@use "./components/navbar";
+@use "./components/hero";
+@use "./components/challenge";
+@use "./components/schedule";
+@use "./components/project";
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: $neutral150;
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.app {
+  width: 100%;
+  max-width: 430px;
+  min-height: 100vh;
+  background: $primary900;
+  overflow-x: hidden;
+}

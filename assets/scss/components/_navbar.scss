@@ -1,0 +1,51 @@
+@use "../vars/variables" as *;
+
+.navbar {
+  height: 56px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $primary800;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.15);
+
+  &__logo-wrapper {
+    padding: 6px 12px;
+    border-radius: 999px;
+  }
+
+  &__logo {
+    height: 30px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &__icon {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: $neutral0;
+    cursor: pointer;
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    img {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+    }
+  }
+
+  &__arrow {
+    color: $neutral0;
+    font-size: 12px;
+  }
+}

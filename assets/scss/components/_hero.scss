@@ -1,0 +1,43 @@
+@use "../vars/variables" as *;
+
+.hero {
+  padding: 24px;
+
+  h1 {
+    color: $neutral0;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 16px 0;
+  }
+
+  &__video {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 5px solid rgb(253, 253, 253);
+    margin: 16px 0;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    background: $primary100;
+    color: $primary950;
+    padding: 12px 20px;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
