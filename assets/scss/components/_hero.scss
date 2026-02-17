@@ -2,6 +2,26 @@
 
 .hero {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding: 48px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: contents;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      flex: 1;
+    }
+  }
 
   h1 {
     color: $neutral0;
@@ -9,6 +29,10 @@
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+    }
   }
 
   p {
@@ -16,6 +40,11 @@
     font-size: 14px;
     line-height: 1.6;
     margin: 16px 0;
+
+    @media screen and (min-width: 768px) {
+      font-size: 15px;
+      max-width: 400px;
+    }
   }
 
   &__video {
@@ -24,6 +53,12 @@
     overflow: hidden;
     border: 5px solid rgb(253, 253, 253);
     margin: 16px 0;
+
+    @media screen and (min-width: 768px) {
+      flex: 1;
+      max-width: 500px;
+      margin: 0;
+    }
 
     img {
       width: 100%;
@@ -39,5 +74,10 @@
     border-radius: 999px;
     font-weight: 600;
     text-decoration: none;
+
+    @media screen and (min-width: 768px) {
+      padding: 14px 24px;
+      font-size: 15px;
+    }
   }
 }

@@ -1,0 +1,120 @@
+@use "../vars/variables" as *;
+
+.footer {
+  background: $primary800;
+  color: $neutral0;
+  padding: 0;
+
+  &__container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  &__cols {
+    display: none;
+  }
+
+  &__line {
+    display: none;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.12);
+    margin: 20px 0;
+  }
+
+  &__bottom {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  &__right a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    margin: 0 6px;
+  }
+
+  &__right .sep {
+    color: rgba(255, 255, 255, 0.18);
+    margin: 0 6px;
+  }
+
+  &__mobile-icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px 6px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  &__mobile-item {
+    flex: 1;
+    padding: 8px 6px;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__mobile-icon {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  /* ===== DESKTOP ===== */
+  @media (min-width: $bp-tablet) {
+    padding: 56px 24px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+
+    &__cols {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    &__col {
+      width: 25%;
+    }
+
+    &__title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    &__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.9);
+
+      li {
+        margin-bottom: 8px;
+      }
+    }
+
+    &__subheading {
+      font-weight: 800;
+      margin: 10px 0 8px;
+      font-size: 14px;
+    }
+
+    &__line {
+      display: block;
+    }
+
+    &__bottom {
+      display: flex;
+      margin-top: 18px;
+    }
+
+    &__mobile-icons {
+      display: none;
+    }
+  }
+}

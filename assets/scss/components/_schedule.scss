@@ -1,0 +1,151 @@
+@use "../vars/variables" as *;
+
+.schedule {
+  padding: 28px 16px 44px;
+  background: $primary700;
+
+  &__inner {
+    margin: 0 auto;
+    padding: 20px 14px 24px;
+  }
+
+  &__title {
+    margin: 0 0 10px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 800;
+    font-size: 28px;
+  }
+
+  &__desc {
+    margin: 0 auto 16px;
+    max-width: 320px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* Mobile: card visible, image hidden */
+  &__image {
+    display: none;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__card {
+    background: $neutral0;
+    border-radius: 28px;
+    padding: 50px 30px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__day {
+    font-weight: 600;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.55);
+  }
+
+  &__date {
+    font-weight: 800;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.75);
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    padding: 12px 14px;
+    margin: 8px 0;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+
+    &--dark {
+      justify-content: space-between;
+      background: $primary800;
+      color: $neutral0;
+    }
+
+    &--light {
+      background: $primary100;
+      color: $primary800;
+    }
+  }
+
+  &__block {
+    margin: 8px 0;
+    padding: 12px;
+    text-align: center;
+    font-size: 12px;
+
+    &--yellow {
+      background: $secondary100;
+      font-weight: 600;
+    }
+
+    &--orange {
+      background: $secondary500;
+      font-weight: 800;
+    }
+  }
+
+  &__btn {
+    margin-top: 10px;
+    display: inline-block;
+    width: 35%;
+    text-align: center;
+    background: #f99c07;
+    color: rgba(0, 0, 0, 0.75);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 13px;
+    padding: 12px 16px;
+    border-radius: 999px;
+  }
+
+  /* ===== DESKTOP ===== */
+  @media (min-width: $bp-tablet) {
+    padding: 48px 0 80px;
+    border-radius: 45px;
+
+    &__inner {
+      padding: 30px 24px 36px;
+    }
+
+    &__title {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+
+    &__desc {
+      font-size: 15px;
+      max-width: 720px;
+      margin-bottom: 20px;
+    }
+
+    /* Desktop: image visible, card hidden */
+    &__card {
+      display: none;
+    }
+
+    &__image {
+      display: block;
+      width: 100%;
+      max-width: 1280px;
+      margin: 12px auto 0;
+      border-radius: 32px;
+      overflow: hidden;
+      box-shadow: 0 22px 60px rgba(0, 0, 0, 0.22);
+    }
+  }
+}

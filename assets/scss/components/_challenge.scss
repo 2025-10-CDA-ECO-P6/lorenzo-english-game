@@ -1,21 +1,46 @@
 @use "../vars/variables" as *;
 
 .challenge {
+  @media (min-width: 768px) {
+    padding-top: 40px;
+  }
+
   &__card {
     background: $neutral0;
     border-radius: 28px;
     max-width: 390px;
     margin: 0 auto;
+    padding: 22px 18px;
     box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
-    padding: 22px 18px 10px;
+
+    @media (min-width: 768px) {
+      max-width: 100%;
+      border-radius: 28px 28px 0 0;
+      padding: 50px 80px 60px;
+    }
+  }
+
+  &__items {
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
   }
 
   h1 {
-    text-align: center; 
-    color: $primary800; 
-    font-size: 24px; 
-    font-weight: 800; 
+    text-align: center;
+    color: $primary800;
+    font-size: 24px;
+    font-weight: 800;
     margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      font-size: 28px;
+      margin-bottom: 32px;
+    }
   }
 
   &__item {
@@ -24,6 +49,11 @@
 
     &:first-child {
       border-top: none;
+    }
+
+    @media (min-width: 768px) {
+      padding: 0;
+      border: none;
     }
   }
 
@@ -35,9 +65,13 @@
     justify-content: center;
     align-items: center;
 
+    @media (min-width: 768px) {
+      min-height: 200px;
+    }
+
     img {
-      width: 100%;
       max-width: 260px;
+      width: 100%;
       height: auto;
     }
   }
@@ -45,19 +79,15 @@
   h3 {
     margin: 14px 0 8px;
     color: $primary800;
-    font-weight: 800;
     font-size: 14px;
+    font-weight: 800;
     line-height: 1.4;
   }
 
   p {
-    margin: 10px 0 0;
-    color: rgba(0, 0, 0, 0.6);
+    margin-top: 10px;
     font-size: 13px;
     line-height: 1.6;
+    color: rgba(0, 0, 0, 0.6);
   }
-}
-
-.challenge__card {
-  overflow: hidden;
 }

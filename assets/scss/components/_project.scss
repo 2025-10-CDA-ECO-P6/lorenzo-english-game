@@ -1,0 +1,265 @@
+@use "../vars/variables" as *;
+
+.project {
+  position: relative;
+  padding: 18px 0 26px;
+  background: $primary900;
+
+  &__wrap {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0 14px;
+  }
+
+  &__card {
+    background: linear-gradient(180deg, #176e76 0%, #155d5f 100%);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 18px;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
+
+    padding: 18px 16px;
+    margin-bottom: 16px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  &__card--title {
+    text-align: center;
+    padding: 22px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__intro-shape {
+    position: absolute;
+    top: -26px;
+    left: -22px;
+    width: 170px;
+    height: 90px;
+    border-radius: 24px;
+    background: rgba(0, 0, 0, 0.12);
+    transform: rotate(-10deg);
+  }
+
+  &__title {
+    margin: 0 0 10px;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+  }
+
+  &__text {
+    margin: 0 auto 14px;
+    max-width: 300px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 11px;
+    line-height: 1.55;
+  }
+
+  &__icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 10px;
+    font-weight: 900;
+    font-size: 20px;
+  }
+
+  &__icon--warning {
+    background: $secondary500;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  &__icon--success {
+    background: #fff;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  &__icon--neutral {
+    background: rgba(255, 255, 255, 0.14);
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  &__name {
+    margin: 0 0 6px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  &__due {
+    margin: 0 0 12px;
+    text-align: center;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  &__drop {
+    border: 2px dashed rgba(255, 255, 255, 0.28);
+    border-radius: 14px;
+    padding: 42px 10px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  &__drop-title {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 8px;
+  }
+
+  &__drop-sub {
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    border-radius: 999px;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: -0.01em;
+
+    &--primary {
+      display: inline-flex;
+      width: auto;
+      background: #cffefb;
+      color: #083c44;
+      padding: 10px 16px;
+    }
+
+    &--outline {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      color: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+  &__btn-ico {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: rgba(255, 255, 255, 0.14);
+    font-size: 11px;
+  }
+
+  &__late {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 10px;
+    color: #f99c07;
+    font-weight: 800;
+  }
+
+  &__file {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 12px;
+  }
+
+  &__file-name {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  &__file-tag {
+    font-size: 9px;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #083c44;
+    font-weight: 800;
+  }
+
+  @media (min-width: $bp-tablet) {
+    padding: 40px 0 60px;
+
+    &__wrap {
+      max-width: 1280px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      align-items: start;
+      padding: 0 14px;
+    }
+
+    &__card--title {
+      grid-column: 1 / -1;
+      padding: 40px 28px;
+      border-radius: 28px;
+      margin-bottom: 18px;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    &__text {
+      font-size: 14px;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__btn--primary {
+      padding: 12px 22px;
+      font-size: 14px;
+    }
+
+    &__card {
+      margin: 0;
+      padding: 28px 22px;
+      transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease;
+    }
+
+    &__wrap > &__card:nth-of-type(1) {
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+      border: 1px solid rgba(249, 156, 7, 0.35);
+    }
+
+    &__name {
+      font-size: 20px;
+      margin-top: 8px;
+    }
+
+    &__due {
+      font-size: 12px;
+      margin-bottom: 18px;
+    }
+
+    &__drop {
+      padding: 36px 18px;
+    }
+
+    &__late {
+      color: $secondary500;
+      margin-top: 12px;
+    }
+  }
+}

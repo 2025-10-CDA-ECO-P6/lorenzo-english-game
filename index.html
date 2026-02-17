@@ -12,17 +12,36 @@
     />
 
     <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
 
   <body>
     <div class="app">
-      <!-- NAVBAR -->
       <header class="navbar">
         <div class="navbar__left">
           <div class="navbar__logo-wrapper">
             <img src="/assets/images/mds.png" alt="Logo" class="navbar__logo" />
           </div>
         </div>
+
+        <nav class="navbar__nav">
+          <a href="#" class="navbar__nav-item navbar__nav-item--dropdown">
+            <span class="navbar__nav-icon">📅</span> Planning
+          </a>
+          <a href="#" class="navbar__nav-item navbar__nav-item--dropdown">
+            <span class="navbar__nav-icon">📦</span> Project
+          </a>
+          <a href="#" class="navbar__nav-item">
+            <span class="navbar__nav-icon">🎓</span> Learning
+          </a>
+          <a href="#" class="navbar__nav-item">
+            <span class="navbar__nav-icon">🏅</span> Badges
+          </a>
+          <a href="#" class="navbar__nav-item">
+            <span class="navbar__nav-icon">📊</span> Ranking
+          </a>
+        </nav>
 
         <div class="navbar__right">
           <button class="navbar__icon">🔔</button>
@@ -33,64 +52,289 @@
         </div>
       </header>
 
-      <!-- Hero -->
       <section class="hero">
-        <h1>Welcome to<br />the English<br />Game</h1>
+        <div class="hero__content">
+          <h1>Welcome to<br />the English<br />Game</h1>
+
+          <p>
+            An immersive challenge to practice and improve your english level
+            through an inter-school competition. For one week, you will work
+            with your team to design a full serious game. Be prepared to get
+            involved, create the best game and challenge yourself!
+          </p>
+
+          <a href="#" class="hero__btn">Discover the program</a>
+        </div>
 
         <div class="hero__video">
           <img src="/assets/images/renduvideo.png" alt="Video" />
         </div>
-
-        <p>
-          An immersive challenge to practice and improve your english level
-          through an inter-school competition. For one week, you will work with
-          your team to design a full serious game. Be prepared to get involved,
-          create the best game and challenge yourself!
-        </p>
-
-        <a href="#" class="hero__btn">Discover the program</a>
       </section>
 
-      <!-- CHALLENGE -->
       <section class="challenge">
         <div class="challenge__card">
           <h1>What does the challenge have in store for you?</h1>
 
-          <div class="challenge__item">
-            <div class="challenge__media">
-              <img src="/assets/images/three-people.png" alt="" />
-            </div>
-            <h3>An experience based on fun, learning and practice.</h3>
+          <div class="challenge__items">
+            <div class="challenge__item">
+              <div class="challenge__media">
+                <img src="/assets/images/three-people.png" alt="" />
+              </div>
+              <h3>An experience based on fun, learning and practice.</h3>
 
-            <p>
-              We hope that your week will be filled with learning and hands-on
-              experience.
-            </p>
-          </div>
-
-          <div class="challenge__item">
-            <div class="challenge__media">
-              <img src="/assets/images/one-guy.png" alt="" />
+              <p>
+                We hope that your week will be filled with learning and hands-on
+                experience.
+              </p>
             </div>
-            <h3>The basics of serious games through videos and quizzes</h3>
-            <p>
-              A team of serious games experts will join you to share their
-              experience and teach you the fundamentals of game mechanics.
-            </p>
-          </div>
 
-          <div class="challenge__item">
-            <div class="challenge__media">
-              <img src="/assets/images/two-girls-one-skrew-diver.png" alt="" />
+            <div class="challenge__item">
+              <div class="challenge__media">
+                <img src="/assets/images/one-guy.png" alt="" />
+              </div>
+              <h3>The basics of serious games through videos and quizzes</h3>
+              <p>
+                A team of serious games experts will join you to share their
+                experience and teach you the fundamentals of game mechanics.
+              </p>
             </div>
-            <h3>Tools to design a project from A to Z</h3>
-            <p>
-              Each day will be based on a design process. From Monday to Friday,
-              you will be supported as you design your project.
-            </p>
+
+            <div class="challenge__item">
+              <div class="challenge__media">
+                <img
+                  src="/assets/images/two-girls-one-skrew-diver.png"
+                  alt=""
+                />
+              </div>
+              <h3>Tools to design a project from A to Z</h3>
+              <p>
+                Each day will be based on a design process. From Monday to
+                Friday, you will be supported as you design your project.
+              </p>
+            </div>
           </div>
         </div>
       </section>
+
+      <section class="schedule">
+        <div class="schedule__inner">
+          <h2 class="schedule__title">Schedule</h2>
+
+          <p class="schedule__desc">
+            Here's the programme for the week, with what's happening each day
+            for the English Game. You can see each day in more detail at the
+            bottom of this schedule.
+          </p>
+
+          <div class="schedule__image">
+            <img src="/assets/images/Calendrier.png" alt="Calendrier" />
+          </div>
+
+          <div class="schedule__card">
+            <div class="schedule__header">
+              <div class="schedule__day">Monday</div>
+              <div class="schedule__date">13</div>
+            </div>
+
+            <div class="schedule__row schedule__row--dark">
+              <span>09:00</span>
+              <span>Kick-off</span>
+            </div>
+
+            <div class="schedule__row schedule__row--light">Ice-breaker</div>
+
+            <div class="schedule__block schedule__block--yellow">
+              #playing<br />
+              #seriousgame
+            </div>
+
+            <div class="schedule__row schedule__row--light">Lunch</div>
+
+            <div class="schedule__block schedule__block--yellow">
+              #brainstorming<br />
+              #gametopic<br />
+              #concept
+            </div>
+
+            <div class="schedule__block schedule__block--orange">
+              Concept doc
+            </div>
+
+            <a class="schedule__btn">View details 👁️ </a>
+          </div>
+        </div>
+      </section>
+      <section class="project">
+        <div class="project__wrap">
+          <div class="project__card--title">
+            <div class="project__intro-shape" aria-hidden="true"></div>
+
+            <h1 class="project__title">My project</h1>
+            <p class="project__text">
+              This is where you can see the deliverables your team needs to
+              submit during the week! Click on "Go to My Project" to find out
+              what's on the My Project page!
+            </p>
+
+            <a href="#" class="project__btn project__btn--primary">
+              Go to my project
+            </a>
+          </div>
+
+          <div class="project__card">
+            <div class="project__icon project__icon--warning">!</div>
+            <h3 class="project__name">Rules V1</h3>
+            <p class="project__due">Due date: Tuesday 5 PM</p>
+
+            <div class="project__drop">
+              <div class="project__drop-title">
+                Drag and Drop or choose file to upload
+              </div>
+              <div class="project__drop-sub">
+                Fichier pris en charge: .pdf, .zip. &lt; 25MB
+              </div>
+            </div>
+
+            <p class="project__due">
+              Fichier pris en charge : .pdf, .zip. &lt; 25MB
+            </p>
+
+            <a href="#" class="project__btn project__btn--outline">
+              Download template <span class="project__btn-ico">↓</span>
+            </a>
+
+            <div class="project__late">You're late!</div>
+          </div>
+
+          <div class="project__card">
+            <div class="project__icon project__icon--neutral">📦</div>
+            <h3 class="project__name">Rules V1</h3>
+            <p class="project__due">Due date: Tuesday 5 PM</p>
+
+            <div class="project__drop">
+              <div class="project__drop-title">
+                Drag and Drop or choose file to upload
+              </div>
+              <div class="project__drop-sub">
+                Fichier pris en charge: .pdf, .zip. &lt; 25MB
+              </div>
+            </div>
+
+            <p class="project__due">
+              Fichier pris en charge : .pdf, .zip. &lt; 25MB
+            </p>
+
+            <a href="#" class="project__btn project__btn--outline">
+              Download template <span class="project__btn-ico">↓</span>
+            </a>
+          </div>
+
+          <div class="project__card">
+            <div class="project__icon project__icon--success">✓</div>
+            <h3 class="project__name">Rules V1</h3>
+            <p class="project__due">Sended on Tuesday 5 PM</p>
+
+            <div class="project__file">
+              <span class="project__file-name">Name_du_fichier.pdf</span>
+              <span class="project__file-tag">valid</span>
+            </div>
+
+            <a href="#" class="project__btn project__btn--outline">
+              Modify this deliverable <span class="project__btn-ico">✎</span>
+            </a>
+
+            <a href="#" class="project__btn project__btn--outline">
+              Download template <span class="project__btn-ico">↓</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__cols">
+            <div class="footer__col">
+              <h4 class="footer__title">Planning</h4>
+              <ul class="footer__list">
+                <li>Monday</li>
+                <li>Tuesday</li>
+                <li>Wednesday</li>
+                <li>Thursday</li>
+                <li>Friday</li>
+              </ul>
+            </div>
+
+            <div class="footer__col">
+              <h4 class="footer__title">Project</h4>
+              <ul class="footer__list">
+                <li>My project</li>
+                <li>Other project</li>
+                <li class="footer__subheading">Fun & competition</li>
+                <li>Ranking</li>
+                <li>Achievements</li>
+              </ul>
+            </div>
+
+            <div class="footer__col">
+              <h4 class="footer__title">Learning</h4>
+              <ul class="footer__list">
+                <li>What are serious games?</li>
+                <li>Business case</li>
+                <li>About fun... and learning</li>
+                <li>Digital add-ons: how to enrich your game?</li>
+                <li>The 4 player profiles</li>
+                <li>Flow concept</li>
+                <li>Serious game level design</li>
+              </ul>
+            </div>
+
+            <div class="footer__col">
+              <h4 class="footer__title">Glossary</h4>
+              <ul class="footer__list">
+                <li>Gameplay</li>
+                <li>Algorithms</li>
+                <li>Relational databases</li>
+                <li>Traffic acquisition</li>
+                <li>Editorial line & calendar</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__line"></div>
+
+          <div class="footer__bottom">
+            <div class="footer__left">Made by MyDigitalSchool</div>
+            <div class="footer__right">
+              <a href="#">Terms of Service</a>
+              <span class="sep">|</span>
+              <a href="#">Credits</a>
+              <span class="sep">|</span>
+              <a href="#">F.A.Q.</a>
+              <span class="sep">|</span>
+              <a href="#">Ticket</a>
+            </div>
+          </div>
+
+          <div class="footer__mobile-icons">
+            <a class="footer__mobile-item" href="#">
+              <span class="footer__mobile-icon">📅</span>
+              <span class="footer__mobile-label">Planning</span>
+            </a>
+            <a class="footer__mobile-item" href="#">
+              <span class="footer__mobile-icon">📦</span>
+              <span class="footer__mobile-label">My project</span>
+            </a>
+            <a class="footer__mobile-item" href="#">
+              <span class="footer__mobile-icon">🎓</span>
+              <span class="footer__mobile-label">Learning</span>
+            </a>
+            <a class="footer__mobile-item" href="#">
+              <span class="footer__mobile-icon">🧭</span>
+              <span class="footer__mobile-label">Glossary</span>
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
