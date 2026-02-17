@@ -744,6 +744,233 @@
   }
 }
 
+.learning {
+  background: #ffffff;
+  padding: 18px 0 30px;
+  display: block;
+  border-top-left-radius: 26px;
+  border-top-right-radius: 26px;
+}
+.learning__inner {
+  max-width: 340px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 26px;
+  padding: 18px 16px 20px;
+  box-shadow: 0 14px 34px rgba(4, 31, 30, 0.1);
+}
+.learning {
+  /* Header */
+}
+.learning__header {
+  text-align: center;
+  padding: 6px 6px 2px;
+}
+.learning__header h2 {
+  font-size: 22px;
+  line-height: 1.1;
+  color: #0f6b6a;
+  margin: 4px 0 10px;
+  font-weight: 800;
+}
+.learning__header p {
+  font-size: 12px;
+  color: #6b7f7c;
+  margin: 0 auto;
+  max-width: 295px;
+  line-height: 1.5;
+}
+.learning__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  background: #f6b600;
+  color: #122b27;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 13px;
+  text-decoration: none;
+  box-shadow: 0 8px 14px rgba(246, 182, 0, 0.18);
+}
+.learning {
+  /* Cards container */
+}
+.learning__cards {
+  margin-top: 14px;
+  display: grid;
+  gap: 14px;
+}
+.learning {
+  /* Single card */
+}
+.learning__card {
+  background: #0f6b6a;
+  color: #ffffff;
+  border-radius: 18px;
+  padding: 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 96px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
+  overflow: hidden;
+  /* Image */
+}
+.learning__card .thumb {
+  width: 76px;
+  height: 76px;
+  border-radius: 14px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.08);
+}
+.learning__card .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.learning__card {
+  /* Text */
+}
+.learning__card .meta {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-right: 58px;
+}
+.learning__card .meta .title {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-top: 18px;
+}
+.learning__card .meta {
+  /* Tag */
+}
+.learning__card .meta .tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ffffff;
+  color: #0f6b6a;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+}
+.learning__card {
+  /* Arrow button (mobile pill style) */
+}
+.learning__card .action {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 30px;
+  border-radius: 999px;
+  background: #f6b600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0c2b27;
+  font-weight: 900;
+  font-size: 18px;
+  box-shadow: 0 10px 18px rgba(246, 182, 0, 0.18);
+  cursor: pointer;
+}
+.learning {
+  /* Small screens fix */
+}
+@media (max-width: 320px) {
+  .learning__inner {
+    max-width: 308px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .learning__card .thumb {
+    width: 64px;
+    height: 64px;
+  }
+  .learning__card .meta {
+    padding-right: 54px;
+  }
+}
+.learning {
+  /* =========================================================
+     LEARNING — DESKTOP (>= 769px)
+  ========================================================= */
+}
+@media (min-width: 769px) {
+  .learning {
+    background: #f3f4f4;
+    padding: 36px 24px 46px;
+  }
+  .learning__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 28px;
+    padding: 34px 34px 30px;
+    box-shadow: 0 16px 40px rgba(6, 34, 33, 0.08);
+  }
+  .learning__header {
+    margin-bottom: 22px;
+  }
+  .learning__header h2 {
+    font-size: 30px;
+  }
+  .learning__header p {
+    font-size: 14px;
+    max-width: 720px;
+    margin: 0 auto 18px;
+  }
+  .learning__cta {
+    font-size: 14px;
+    padding: 10px 22px;
+  }
+  .learning__cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    margin-top: 18px;
+  }
+  .learning__card {
+    padding: 18px;
+    min-height: 128px;
+  }
+  .learning__card .thumb {
+    width: 94px;
+    height: 94px;
+    margin-right: 16px;
+  }
+  .learning__card .meta {
+    padding-right: 56px;
+  }
+  .learning__card .meta .title {
+    font-size: 18px;
+    margin-top: 22px;
+  }
+  .learning__card .meta .tag {
+    top: 12px;
+    right: 12px;
+    font-size: 12px;
+  }
+  .learning__card {
+    /* Desktop = bouton rond */
+  }
+  .learning__card .action {
+    bottom: 12px;
+    top: auto;
+    transform: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  }
+}
+
 html,
 body {
   margin: 0;
